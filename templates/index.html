@@ -1,0 +1,27 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='scripts.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <h2>Eye Detection and Alert System</h2>
+    </header>
+    <div class="container">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+        <h1>Welcome to the Eye Detector</h1>
+        <p>This system helps in detecting eye closures and alerts you to prevent accidents. Click the button below to start the detection process.</p>
+        <button id="start-detection" class="btn">Click to Detect</button>
+        <button id="stop-detection" class="btn">Stop</button>
+        <img id="video-feed" src="#" width="720" height="480" alt="Video Feed">
+    </div>
+    <footer>
+        <p>&copy; 2024 Eye Detector. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
