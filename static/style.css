@@ -1,0 +1,89 @@
+/* static/style.css */
+/* static/style.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('/static/background.jpg'); /* Correct path */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+header {
+    background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent background */
+    color: #fff;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    margin-top: 80px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+img {
+    border: 2px solid #333;
+    margin-top: 20px;
+    display: none;
+    border-radius: 10px;
+}
+
+img.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+#stop-detection {
+    display: none;
+}
