@@ -19,10 +19,10 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 # Twilio credentials (loaded from environment variables or a secure file)
-twilio_account_sid = os.getenv("TWILIO_ACCOUNT_SID", "ACfccc9a61255b6d2be603f33d91c2ba5d")
-twilio_auth_token = os.getenv("TWILIO_AUTH_TOKEN", "137aeeb2a599123b5b13d9d5a736cc7b")
-twilio_phone_number = os.getenv("TWILIO_PHONE_NUMBER", "+15677042196")
-recipient_number = os.getenv("RECIPIENT_PHONE_NUMBER", "+918200287696")
+twilio_account_sid = os.getenv("TWILIO_ACCOUNT_SID", "xyz")
+twilio_auth_token = os.getenv("TWILIO_AUTH_TOKEN", "abc")
+twilio_phone_number = os.getenv("TWILIO_PHONE_NUMBER", "000")
+recipient_number = os.getenv("RECIPIENT_PHONE_NUMBER", "777")
 
 # Haar cascade for eye detection
 eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
